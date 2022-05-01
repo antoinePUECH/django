@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+    {% if questions %}
+        <h2>Liste des questions</h2>
+    <nav>
+        <ul>
+            {% for question in questions %}
+                <li>
+                    {{ question.name }}
+                </li>
+            {% endfor %}
+        </ul>
+    </nav>
+    {% else %}
+    <h2>
+        pas de question
+    </h2>
+    {% endif %}
+    </body>
+</html>
